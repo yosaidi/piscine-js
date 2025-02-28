@@ -1,0 +1,11 @@
+is.num = (n) => typeof(n) === "number";
+is.nan = (n) => Number.isNaN(n);
+is.str = (str) => typeof(str) === "string";
+is.bool = (bool) => typeof(bool) === "boolean";
+is.undef = (any) => typeof(any) === "undefined";
+is.def = (any) => typeof(any) != "undefined";
+is.arr = (arr) => Array.isArray(arr);
+is.obj = (obj) => typeof(obj) === "object"&& obj!== null && !Array.isArray(obj);
+is.fun = (fun) => typeof(fun) === "function";
+is.truthy = (truthy) => !!truthy;
+is.falsy = (falsy) => !falsy ;
